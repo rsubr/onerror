@@ -3,6 +3,15 @@
 ## Description
 This application runs a command and captures its stdout and stderr. If the command exits successfully, the command output is sent to syslog. If the command fails, then the output is sent to stderr and syslog.
 
+## Building
+
+```
+git clone https://github.com/rsubr/onerror.git
+cd onerror
+go build onerror.go
+strip onerror
+```
+
 ## Usage
 
 Use this application in crontab where you want to be emailed only if the cron job fails.
