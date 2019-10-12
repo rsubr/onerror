@@ -34,7 +34,7 @@ When calling bash scripts from `onerror`, you must use `set -e pipefail` to ensu
 # Sample bash script
 
 # do not continue script on errors
-set -e pipefail
+set -euo pipefail
 
 pg_dump ...
 borg create $REPO::foo-{now} $MY_FILES
