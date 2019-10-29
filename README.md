@@ -27,7 +27,7 @@ Use this application in crontab where you want to be emailed only if the cron jo
 @hourly root onerror /usr/local/sbin/borg-backup-bar.sh
 ```
 
-When calling bash scripts from `onerror`, you must use `set -e pipefail` to ensure the script fails and exits immediately whenever any command fails.
+When calling bash scripts from `onerror`, you must use `set -euo pipefail` to ensure the script fails and exits immediately whenever any command fails.
 
 ```
 #!/bin/bash
