@@ -8,7 +8,7 @@ This application runs a command and captures its stdout and stderr. If the comma
 ```
 git clone https://github.com/rsubr/onerror.git
 cd onerror
-go build onerror.go
+go build
 strip onerror
 ```
 
